@@ -3,8 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import { BackgroundBeams } from "@/components/UI_Components/background-beams";
-import { ToastContainer, toast } from "react-toastify";
+// import { BackgroundBeams } from "@/components/UI_Components/background-beams";
 import "react-toastify/dist/ReactToastify.css";
 // import ContactInfo from "@/components/Sub_Component/ContactInfo";
 
