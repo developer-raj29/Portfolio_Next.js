@@ -13,7 +13,7 @@ const Content = () => {
   return (
     <div className="xl:w-[48%] lg:w-[50%] md:w-[55%] sm:w-[70%] w-[95%] h-full flex flex-col sm:justify-center justify-start sm:mt-0 mt-32 md:z-0 z-10">
       <h2 className="xl:text-[3rem] lg:text-[2.2rem] md:text-[2rem] sm:text-[1.8rem] text-[2rem] font-black leading-normal">
-        Hello, I'm
+        Hello, I&#39;m
       </h2>
       <h1
         className="xl:text-[4rem] lg:text-[3.8rem] md:text-[3.6rem] sm:text-[3.5rem] text-[3rem] font-black leading-normal animate-text bg-gradient-to-r
@@ -22,7 +22,7 @@ const Content = () => {
         Raj Yadav
       </h1>
       <h2 className="flex gap-2 xl:text-[2rem] lg:text-[1.8rem] sm:text-[1.6rem] text-[1.3rem] font-black leading-normal">
-        And I'm
+        And I&#39;m
         <span className="auto-typing-1 text-[#f8ce96]">
           {/* <TextAnimation /> */}
           Full Stack Developer

@@ -30,7 +30,7 @@ const LinkedInCon = () => {
 
             <p className="flex flex-col mx-auto xl:text-[1rem] sm:text-[0.8rem] text-[0.9rem] px-[3px]">
               <span className="font-semibold opacity-[41%]">
-                "🚀 Passionate (SDE) - Software
+                &#34;🚀 Passionate (SDE) - Software
               </span>
               <span className="font-semibold opacity-[41%]">
                 Development Engineer | DSA | MERN stack
@@ -39,7 +39,7 @@ const LinkedInCon = () => {
                 or Full Stack Developer Enthusiast |
               </span>
               <span className="font-semibold opacity-[41%]">
-                Open to Exciting Opportunities"
+                Open to Exciting Opportunities&#34;
               </span>
             </p>
 
