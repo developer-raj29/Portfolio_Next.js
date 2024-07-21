@@ -24,6 +24,7 @@
     "react-three-fiber": "^6.0.13",
     "react-toastify": "^10.0.5",
     "react-vertical-timeline-component": "^3.6.0",
+    "sharp": "^0.33.4",
     "styled-components": "^6.1.12",
     "swr": "^2.2.5",
     "tailwind-merge": "^2.4.0",
