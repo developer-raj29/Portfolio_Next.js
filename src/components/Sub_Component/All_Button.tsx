@@ -22,6 +22,7 @@ const ALLButton: React.FC<AllButtonProps> = (props) => {
         target={page}
         rel="noopener noreferrer"
         className="flex items-center justify-center gap-3"
+        locale={false}
       >
         {text}
         {icon}

@@ -11,7 +11,7 @@ const page = () => {
   // pt-1 w-11/12 mx-auto
   return (
     <main className="flex flex-col gap-12 mt-[6rem] w-[95%] mx-auto">
-      <div className="w-full xl:h-[40rem] h-[38rem] xl:mt-[4rem] mt-0 mx-auto">
+      <div className="w-full xl:h-[40rem] h-[38rem] xl:mt-[4rem] mt-0 relative mx-auto">
         <Home />
         <StarsCanvas />
       </div>

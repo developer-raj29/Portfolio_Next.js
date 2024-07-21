@@ -1,6 +1,6 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
-// import resume from "../../Raj Yadav_Resume.pdf";
+// import resume from "../../";
 import Handler from "../../app/api/index";
 // import TextAnimation from "../Animation/TextAnimation";
 import ALLButton from "./All_Button";
@@ -49,7 +49,7 @@ const Content = () => {
       <ALLButton
         text={"Download"}
         page={"_blank"}
-        linkto={"resume"}
+        linkto={"./Raj_Yadav_Resume.pdf"}
         icon={<FaDownload />}
       />
     </div>
