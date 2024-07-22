@@ -15,7 +15,7 @@ const EducationCard: React.FC<EducationProps> = (props) => {
 
   return (
     <div
-      className="xl:w-[80%] sm:w-[88%] xs:w-[95%] w-[85%] h-[50%] mx-auto"
+      className="xl:w-[80%] sm:w-[88%] xs:w-[95%] w-[92%] h-[50%] mx-auto"
       key={id}
     >
       <li className="relative min-h-full mb-5 sm:ms-4 ms-2 list-none flex sm:gap-5 gap-2">

@@ -8,7 +8,7 @@ const Project = () => {
 
   return (
     <section className="flex flex-col gap-10 mt-[8rem]">
-      <div className="w-11/12 mx-auto">
+      <div className="md:w-11/12 w-[98%] mx-auto">
         <div className="mx-auto md:max-w-[740px] sm:max-w-[630px] max-w-[380px] text-center">
           <h2 className="h2-heading">
             Work Experience & What I Have Done This Projects

@@ -18,7 +18,7 @@ const Hero = () => {
             src={Heros}
             alt="img"
             loading="lazy"
-            className="xl:w-[28rem] md:w-[25rem] sm:w-[24rem] w-[23rem] h-full xl:-mt-[2rem] lg:-mt-[0] md:mt-[1rem] mt-[3rem] md:opacity-100 opacity-[0.50]"
+            className="xl:w-[28rem] md:w-[25rem] sm:w-[24rem] w-[23rem] h-full xl:-mt-[2rem] lg:-mt-[0] md:mt-[1rem] sm:mt-[3rem] -mt-[4rem] md:opacity-100 opacity-[0.50]"
           />
         </Tilt>
 

@@ -5,7 +5,7 @@ import Contact from "@/components/Contact";
 const Education = () => {
   return (
     <main className="mt-[8rem] flex flex-col gap-10">
-      <section className="w-11/12 mx-auto">
+      <section className="md:w-11/12 w-[98%] mx-auto">
         <Education_Com />
       </section>
       <Contact />

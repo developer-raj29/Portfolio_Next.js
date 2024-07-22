@@ -22,7 +22,7 @@ const Pro2_Container = (props: { pro: string | any }) => {
 
   return (
     <div className="project-page">
-      <div className="md:p-14 p-16 flex flex-wrap justify-center gap-14">
+      <div className="md:p-14 sm:p-16 py-8 px-6 flex flex-wrap justify-center gap-14">
         {Projects.map((data: Data) => (
           <Card
             key={data.id}

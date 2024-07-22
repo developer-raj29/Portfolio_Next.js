@@ -20,14 +20,14 @@ const About = () => {
 
   return (
     <section className="mt-[7.5rem] flex flex-col gap-10">
-      <div className="flex flex-col gap-16 pt-1 w-11/12 mx-auto">
+      <div className="flex flex-col gap-16 pt-1 md:w-11/12 w-[98%] mx-auto">
         {DATA.map((item) => {
           return (
             <>
               <div className="about-page about-page1" key={item.id}>
                 <Hero image={AboutIMG} id={1} />
 
-                <div className="xl:w-[85%] lg:w-[90%] h-[100%] flex flex-col gap-10 ">
+                <div className="xl:w-[85%] lg:w-[90%] w-[100%] h-[100%] flex flex-col gap-10">
                   <div className="flex flex-col gap-5">
                     <h1 className="text-[2.5rem] flex mx-auto gap-2 font-bold leading-normal about-text">
                       {item.title}
@@ -39,9 +39,9 @@ const About = () => {
                       />
                     </h1>
 
-                    <h2 className="md:text-[1.7rem] flex text-[1.5rem] mx-auto font-semibold leading-normal">
+                    <h2 className="md:text-[1.7rem] flex sm:text-[1.5rem] text-[13.5px] sm:mx-auto mx- font-semibold leading-normal">
                       {item.heading}
-                      <span className="auto-typing-1 ml-2 text-[#f8ce96]">
+                      <span className="auto-typing-1 md:ml-2 ml-1 text-[#f8ce96]">
                         {/* <TextAnimation /> */}
                         Full Stack Developer
                       </span>
@@ -85,7 +85,7 @@ const About = () => {
 
                   {/*   💻 Tech Stack:*/}
                   <div className="flex flex-col gap-6 items-start ">
-                    <h1 className="xl:text-[2.5rem] text-[2rem] leading-normal">
+                    <h1 className="xl:text-[2.5rem] md:text-[2rem] text-[1.8rem] leading-normal">
                       💻
                       <span className="font-[900] animate-text bg-gradient-to-br from-indigo-200 via-cyan-500 to-green-600 bg-clip-text text-transparent">
                         Tech Stack:
@@ -96,7 +96,7 @@ const About = () => {
 
                   {/*   📊 GitHub Stats: */}
                   <div className="flex flex-col gap-6 items-start ">
-                    <h1 className="xl:text-[2.5rem] text-[2rem] font-bold leading-normal">
+                    <h1 className="xl:text-[2.5rem] md:text-[2rem] text-[1.8rem] font-bold leading-normal">
                       📊
                       <span className="font-[900] animate-text bg-gradient-to-br from-indigo-200 via-cyan-500 to-green-600 bg-clip-text text-transparent">
                         GitHub Stats:
@@ -107,7 +107,7 @@ const About = () => {
 
                   {/*  🌐 LinkedIn Profile: */}
                   <div className="flex flex-col gap-6 items-start">
-                    <h1 className="xl:text-[2.5rem] text-[2rem] font-bold leading-normal">
+                    <h1 className="xl:text-[2.5rem] md:text-[2rem] text-[1.8rem] font-bold leading-normal">
                       🌐
                       <span className="font-[900] animate-text bg-gradient-to-br from-indigo-200 via-cyan-500 to-green-600 bg-clip-text text-transparent">
                         LinkedIn Profile:

@@ -13,7 +13,7 @@ const Hero: React.FC<AboutProps> = (props) => {
   return (
     <Tilt>
       <div
-        className="xl:w-[22rem] w-[20rem] h-[28rem] rounded-[4rem] animate-text hover:bg-gradient-to-bl from-cyan-600
+        className="xl:w-[22rem] xs:w-[20rem] xs:h-[28rem] w-[18rem] h-[26rem] rounded-[4rem] animate-text hover:bg-gradient-to-bl from-cyan-600
            via-indigo-400 to-green-400 bg-clip- text-transparent hover:shadow-card"
         key={id}
       >

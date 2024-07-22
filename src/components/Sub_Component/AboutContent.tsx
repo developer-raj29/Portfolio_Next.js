@@ -34,9 +34,9 @@ const Content: React.FC<ContentProps> = (props) => {
         />
       </h1>
 
-      <h2 className="flex xl:text-[1.66rem] text-[1.6rem] mx-0 font-semibold leading-normal">
+      <h2 className="flex xl:text-[1.66rem] xs:text-[1.6rem] text-[.85rem] mx-0 font-semibold leading-normal">
         {heading}
-        <span className="auto-typing-1 text-[#f8ce96] ml-2">
+        <span className="auto-typing-1 text-[#f8ce96] ml-1">
           {/* <TextAnimation /> */}
           Full Stack Developer
         </span>

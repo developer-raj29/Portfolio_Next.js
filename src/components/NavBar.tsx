@@ -48,7 +48,7 @@ const NavBar: React.FC = () => {
 
   return (
     <nav
-      className="fixed flex items-center lg:justify-around justify-between mx-auto xl:w-[95%] lg:w-[94%] md:w-[90%] sm:w-[95%] w-[90%] lg:h-[12%] md:h-[13%] sm:h-[12%] h-[14%] mt-2 xl:px-0 lg:px-1 md:px-12 sm:px-12 px-6 xl:gap-16 sm:gap-[10rem] gap-0 z-[9999999] backdrop-blur-md xl:rounded-s-[3rem] xl:rounded-e-[3rem] rounded-s-[4rem] rounded-e-[4rem]
+      className="fixed flex items-center lg:justify-around justify-between mx-auto xl:w-[95%] lg:w-[94%] md:w-[90%] sm:w-[95%] w-[90%] lg:h-[12%] md:h-[13%] sm:h-[12%] xs:h-[14%] h-[12%] mt-2 xl:px-0 lg:px-1 md:px-12 sm:px-12 px-6 xl:gap-16 sm:gap-[10rem] gap-0 z-[9999999] backdrop-blur-md xl:rounded-s-[3rem] xl:rounded-e-[3rem] rounded-s-[4rem] rounded-e-[4rem]
      nav-animation transition-all duration-700"
     >
       <div className="xl:w-[21%] lg:w-[26%] md:w-[40%] sm:w-[45%] w-[90%] xl:-ml-14 lg:ml-6 md:ml-3 sm:ml-2">
@@ -61,9 +61,9 @@ const NavBar: React.FC = () => {
           <Image
             src={logo}
             alt="logo"
-            className="absolute xl:w-[31%] lg:w-[28%] md:w-[29%] sm:w-[28.5%] w-[21%] rounded-bl-[3rem] rounded-br-[3.2rem] top-[2px] "
+            className="absolute xl:w-[31%] lg:w-[28%] md:w-[29%] sm:w-[28.5%] xs:w-[21%] w-[20%] rounded-bl-[3rem] rounded-br-[3.2rem] top-[2px] "
           />
-          <h2 className="nav-text lg:text-[1.8rem] md:text-[2rem] sm:text-[2rem] text-[1.8rem] animate-text bg-gradient-to-br from-blue-600 via-purple-600 to-yellow-400 bg-clip-text text-transparent">
+          <h2 className="nav-text lg:text-[1.8rem] md:text-[2rem] sm:text-[2rem] xs:text-[1.8rem] text-[1.5rem] animate-text bg-gradient-to-br from-blue-600 via-purple-600 to-yellow-400 bg-clip-text text-transparent">
             Raj Yadav
           </h2>
         </Link>
@@ -72,13 +72,16 @@ const NavBar: React.FC = () => {
       <ul
         className={`${
           isOpen
-            ? "lg:hidden flex flex-col items-center bg-gradient-to-br from-gray-500 to-black backdrop-blur-md absolute md:top-[170px] sm:top-[95px] xs:top-[130px] top-[120px] md:py-8 sm:py-6 py-5 md:px-14 sm:px-12 px-11 gap-6 md:right-5 sm:right-2 right-0 border border-[#858484] shadow-2xl shadow-slate-700 rounded-[2rem]"
+            ? "lg:hidden flex flex-col items-center bg-gradient-to-br from-gray-500 to-black backdrop-blur-md absolute md:top-[170px] sm:top-[95px] xs:top-[130px] top-[115px] md:py-8 sm:py-6 py-5 md:px-14 sm:px-12 px-11 gap-6 md:right-5 sm:right-2 right-0 border border-[#858484] shadow-2xl shadow-slate-700 rounded-[2rem]"
             : "lg:flex hidden gap-12"
         } lg:flex-row list-none`}
       >
         {links.map((link: Link) => (
           <li key={link.id}>
-            <Link href={link.href} className="font-semibold text-base">
+            <Link
+              href={link.href}
+              className="font-semibold text-base hover:text-[#268feb] hover:underline underline-offset-2 transition-all duration-500"
+            >
               {link.name}
             </Link>
           </li>

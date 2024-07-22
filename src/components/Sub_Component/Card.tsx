@@ -44,7 +44,7 @@ const Card: React.FC<CardProps> = (props) => {
     <Tilt>
       {/* <BackgroundGradient className="rounded-[45px] max-w-sm bg-white dark:bg-zinc-900"> */}
       <div
-        className="w-[325px] h-full project-card-shadow rounded-[2.5rem] flex flex-col justify-center gap-5 p-4 hover:-translate-y-5 transition-all duration-700"
+        className="md:w-[325px] sm:w-[310px] w-[295px] h-full project-card-shadow rounded-[2.5rem] flex flex-col justify-center gap-5 p-4 hover:-translate-y-5 transition-all duration-700"
         key={key}
       >
         <div className="relative">

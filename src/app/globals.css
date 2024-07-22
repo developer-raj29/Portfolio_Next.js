@@ -575,6 +575,10 @@ textarea {
     width: 90%;
   }
 
+  .contact-page {
+    border-radius: 3rem;
+  }
+
   .footer-page {
     height: 55rem;
   }
@@ -588,6 +592,12 @@ textarea {
 
   .h1-heading {
     font-size: 2.3rem;
+  }
+
+  .about-page,
+  .education-page,
+  .skill-page {
+    width: 98%;
   }
 
   section,
@@ -628,6 +638,10 @@ textarea {
     gap: 3rem;
   }
 
+  .contact-page {
+    border-radius: 2rem;
+  }
+
   .footer-page {
     height: 56rem;
   }
@@ -657,7 +671,20 @@ textarea {
     margin-top: 1rem;
   }
 
+  .box {
+    width: 46px;
+    padding: 5px;
+  }
+
   .contact-page {
     height: 60rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .about-page1 {
+    height: 100%;
+    padding: 0.6rem;
+    padding-bottom: 1rem;
   }
 }
