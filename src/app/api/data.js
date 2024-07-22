@@ -8,7 +8,7 @@ import NBM from "../../../public/Images/NBM.png";
 // projects img
 import Portfolio from "../../../public/Projects/project 1.png";
 import newE_comm from "../../../public/Projects/new E-commerce.png";
-import My_Portfolio from "../../../public/Projects/11 Personal Portfolio.png";
+import My_Portfolio from "../../../public/Projects/11 Personal Portfolio.jpg";
 import Contact_APP from "../../../public/Projects/12 Firebase Contact CRUD.png";
 import Nike_Shoe from "../../../public/Projects/13 Nike store.png";
 import Weather_Tracker from "../../../public/Projects/06 Pro Weather App.png";
@@ -21,6 +21,7 @@ import Spotify_clone from "../../../public/Projects/04 Pro - Spotify Clone 1.png
 import Login_Page from "../../../public/Projects/05 Pro - Login Page 1.png";
 import Registration_page from "../../../public/Projects/08 Registration Page.png";
 import TechSoft from "../../../public/Projects/Tech_Soft Blog.png";
+import MusicWebsite from "../../../public/Projects/14MusicallWebsite.png";
 
 import Vite_React from "../../../public/Projects/Vite_react.png";
 import firebase from "../../../public/Projects/Firebase.png";
@@ -61,32 +62,32 @@ const data = {
     {
       id: 1,
       title: "Portfolio",
-      date: "Mar 2024 - Apr 2024",
+      date: "June 2024 - July 2024",
       description:
-        "Designed a personal portfolio website showcasing skills and projects for personal growth. Applied successfully email.js API for form validation and sending emails/messages for collaboration and other. Leveraged JavaScript, React.js, and Node.js to create interactive & dynamic features, enhancing user experience. Utilized Tailwind CSS for styling and layout, ensuring a responsiveness to across devices. Integrated 3D animations and 3D images for enhanced visual appeal and engagement.",
-      image: Portfolio,
-      link: "https://github.com/Rajyadav2912/NEW_PORTFOLIO",
-      weblink: "https://raj-portfolio-2920.vercel.app/",
+        "Designed a personal portfolio website showcasing skills and projects for personal growth. Applied successfully email.js API for form validation and sending emails/messages for collaboration and other. Leveraged Next.js, typescript, React.js, and Node.js to create interactive & dynamic features, enhancing user experience. Utilized Tailwind CSS for styling and layout, ensuring a responsiveness to across devices. Integrated 3D animations and 3D images for enhanced visual appeal and engagement.",
+      image: My_Portfolio,
+      link: "https://github.com/Rajyadav2912/Portfolio_Next.js",
+      weblink: "https://raj-developer-2920.vercel.app/",
       skills: [
         {
           id: 1,
-          name: "React.js",
-          image: React,
+          name: "Next.js",
+          image: Nextjs,
         },
         {
           id: 2,
           name: "Tailwind Css",
-          image: Tailwind,
+          image: Typescript,
         },
         {
           id: 3,
-          name: "HTML",
-          image: HTML,
+          name: "React.js",
+          image: React,
         },
         {
           id: 4,
-          name: "CSS",
-          image: CSS,
+          name: "Tailwind Css",
+          image: Tailwind,
         },
         {
           id: 5,
@@ -96,9 +97,44 @@ const data = {
       ],
       category: "Frontend",
     },
-    // 2.  title: "Tech-Soft Blog website",
+
     {
       id: 2,
+      title: "Musicall Website",
+      date: "June 2024 - June 2024",
+      description:
+        "Design a music teaching website using Next.js, TypeScript, and React for interactive lessons, practice exercises, and video tutorials. The site features a responsive, user-friendly interface with fast loading times, reusable UI components, and an engaging, visually appealing layout.",
+      image: MusicWebsite,
+      link: "https://github.com/Rajyadav2912/Music-Web-Next.js",
+      weblink: "https://music-web-next-js-web-app.vercel.app/",
+      skills: [
+        {
+          id: 1,
+          name: "Next.js",
+          image: Nextjs,
+        },
+        {
+          id: 2,
+          name: "Tailwind Css",
+          image: Typescript,
+        },
+        {
+          id: 3,
+          name: "React.js",
+          image: React,
+        },
+        {
+          id: 4,
+          name: "Tailwind Css",
+          image: Tailwind,
+        },
+      ],
+      category: "Frontend",
+    },
+
+    // 2.  title: "Tech-Soft Blog website",
+    {
+      id: 3,
       title: "Tech-Soft Blog website",
       date: "Feb 2024 - Mar 2024",
       description:
@@ -137,7 +173,7 @@ const data = {
     },
     // 3. title: "My Portfolio",
     {
-      id: 3,
+      id: 4,
       title: "Full Stack E-commerce website",
       date: "Mar 2024 - Apr 2024",
       description:
@@ -176,7 +212,7 @@ const data = {
     },
     // 4. title: "Contact APP with CRUD",
     {
-      id: 4,
+      id: 5,
       title: "Contact APP with CRUD",
       date: "Jan 2024 - feb 2024",
       description:
@@ -208,40 +244,84 @@ const data = {
       ],
       category: "Full Stack",
     },
-    // 5 title: "Nike Shoes Website",
+  ],
+  Projects: [
+    // 2. title: "My Portfolio",
     {
-      id: 5,
-      title: "Nike Shoes Website",
-      date: "Feb 2024 - Mar 2024",
+      id: 1,
+      title: "Portfolio",
+      date: "June 2024 - July 2024",
       description:
-        "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
-      image: Nike_Shoe,
-      link: "https://github.com/Rajyadav2912/Learn_React_Js_with_Projects/tree/master/05_Projects/nike-shoes-landing-page",
-      weblink: "https://nike-shoes-store-orcin.vercel.app/",
+        "Designed a personal portfolio website showcasing skills and projects for personal growth. Applied successfully email.js API for form validation and sending emails/messages for collaboration and other. Leveraged Next.js, typescript, React.js, and Node.js to create interactive & dynamic features, enhancing user experience. Utilized Tailwind CSS for styling and layout, ensuring a responsiveness to across devices. Integrated 3D animations and 3D images for enhanced visual appeal and engagement.",
+      image: My_Portfolio,
+      link: "https://github.com/Rajyadav2912/Portfolio_Next.js",
+      weblink: "https://raj-developer-2920.vercel.app/",
       skills: [
         {
           id: 1,
+          name: "Next.js",
+          image: Nextjs,
+        },
+        {
+          id: 2,
+          name: "Tailwind Css",
+          image: Typescript,
+        },
+        {
+          id: 3,
           name: "React.js",
           image: React,
         },
         {
+          id: 4,
+          name: "Tailwind Css",
+          image: Tailwind,
+        },
+        {
+          id: 5,
+          name: "JavaScript",
+          image: Javascript,
+        },
+      ],
+      category: "Frontend",
+    },
+    // 2. title: "My Portfolio",
+    {
+      id: 2,
+      title: "Musicall Website",
+      date: "June 2024 - June 2024",
+      description:
+        "Design a music teaching website using Next.js, TypeScript, and React for interactive lessons, practice exercises, and video tutorials. The site features a responsive, user-friendly interface with fast loading times, reusable UI components, and an engaging, visually appealing layout.",
+      image: MusicWebsite,
+      link: "https://github.com/Rajyadav2912/Music-Web-Next.js",
+      weblink: "https://music-web-next-js-web-app.vercel.app/",
+      skills: [
+        {
+          id: 1,
+          name: "Next.js",
+          image: Nextjs,
+        },
+        {
           id: 2,
-          name: "Node.js",
-          image: Node,
+          name: "Tailwind Css",
+          image: Typescript,
         },
         {
           id: 3,
-          name: "Tailwind.css",
+          name: "React.js",
+          image: React,
+        },
+        {
+          id: 4,
+          name: "Tailwind Css",
           image: Tailwind,
         },
       ],
       category: "Frontend",
     },
-  ],
-  Projects: [
     // 1.  title: "Tech-Soft Blog website",
     {
-      id: 1,
+      id: 3,
       title: "Tech-Soft Blog website",
       date: "Feb 2024 - Mar 2024",
       description:
@@ -278,48 +358,9 @@ const data = {
       ],
       category: "Frontend",
     },
-    // 2. title: "My Portfolio",
-    {
-      id: 2,
-      title: "Portfolio",
-      date: "Mar 2024 - Apr 2024",
-      description:
-        "Designed a personal portfolio website showcasing skills and projects for personal growth. Applied successfully email.js API for form validation and sending emails/messages for collaboration and other. Leveraged JavaScript, React.js, and Node.js to create interactive & dynamic features, enhancing user experience. Utilized Tailwind CSS for styling and layout, ensuring a responsiveness to across devices. Integrated 3D animations and 3D images for enhanced visual appeal and engagement.",
-      image: Portfolio,
-      link: "https://github.com/Rajyadav2912/NEW_PORTFOLIO",
-      weblink: "https://raj-portfolio-2920.vercel.app/",
-      skills: [
-        {
-          id: 1,
-          name: "React.js",
-          image: React,
-        },
-        {
-          id: 2,
-          name: "Tailwind Css",
-          image: Tailwind,
-        },
-        {
-          id: 3,
-          name: "HTML",
-          image: HTML,
-        },
-        {
-          id: 4,
-          name: "CSS",
-          image: CSS,
-        },
-        {
-          id: 5,
-          name: "JavaScript",
-          image: Javascript,
-        },
-      ],
-      category: "Frontend",
-    },
     // 3. title: "Full Stack E-commerce website",
     {
-      id: 3,
+      id: 4,
       title: "Full Stack E-commerce website",
       date: "Mar 2024 - Apr 2024",
       description:
@@ -358,7 +399,7 @@ const data = {
     },
     // 4. title: "My Portfolio",
     {
-      id: 4,
+      id: 5,
       title: "My Portfolio",
       date: "Jan 2024 - feb 2024",
       description:
@@ -387,7 +428,7 @@ const data = {
     },
     // 5. title: "Contact APP with CRUD",
     {
-      id: 5,
+      id: 6,
       title: "Contact APP with CRUD",
       date: "Jan 2024 - feb 2024",
       description:
@@ -421,7 +462,7 @@ const data = {
     },
     // 6 title: "Nike Shoes Website",
     {
-      id: 6,
+      id: 7,
       title: "Nike Shoes Website",
       date: "Feb 2024 - Mar 2024",
       description:
@@ -450,7 +491,7 @@ const data = {
     },
     // 7. title: "Weather Tracking Web App",
     {
-      id: 7,
+      id: 8,
       title: "Weather Tracking Web App",
       date: "Feb 2024 - Mar 2024",
       description:
@@ -479,7 +520,7 @@ const data = {
     },
     // 8. title: "Razorpay Clone",
     {
-      id: 8,
+      id: 9,
       title: "Razorpay Clone",
       date: "Jan 2024 - Feb 2024",
       description:
@@ -508,7 +549,7 @@ const data = {
     },
     // 9. title: "E-commerce Shopping Website",
     {
-      id: 9,
+      id: 10,
       title: "E-commerce Shopping Website",
       date: "July 2023 - Aug 2024",
       description:
@@ -537,7 +578,7 @@ const data = {
     },
     // 10. title: "Password Generator WebApp",
     {
-      id: 10,
+      id: 11,
       title: "Password Generator WebApp",
       date: "Feb 2024 - Mar 2024",
       description:
@@ -566,7 +607,7 @@ const data = {
     },
     // 11. title: "Basice Portfolio",
     {
-      id: 11,
+      id: 12,
       title: "Basice Portfolio",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -595,7 +636,7 @@ const data = {
     },
     // 12. title: "Client Portfolio Website",
     {
-      id: 12,
+      id: 13,
       title: "Client Portfolio Website",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -624,7 +665,7 @@ const data = {
     },
     // 13. title: "Spotify Clones Website",
     {
-      id: 13,
+      id: 14,
       title: "Spotify Clones Website",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -653,7 +694,7 @@ const data = {
     },
     // 14. title: "Login Page",
     {
-      id: 14,
+      id: 15,
       title: "Login Page",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -682,7 +723,7 @@ const data = {
     },
     // 15.  title: "Registration From",
     {
-      id: 15,
+      id: 16,
       title: "Registration From",
       date: "Aug 2023 - Sep 2023",
       description: "Basic Registration website",
