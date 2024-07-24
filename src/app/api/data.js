@@ -776,10 +776,131 @@ const data = {
       standard: "Class: 10th | MPBSE",
     },
   ],
-  Skills: [],
 };
 
 export default data;
+
+export const Skills = [
+  {
+    id: 1,
+    name: "Java",
+    image: Java,
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 2,
+    name: "HTML",
+    image: HTML,
+    width: 60,
+    height: 60,
+  },
+  {
+    id: 3,
+    name: "CSS",
+    image: CSS,
+    width: 60,
+    height: 60,
+  },
+  {
+    id: 4,
+    name: "Javascipt",
+    image: Javascript,
+    width: 60,
+    height: 60,
+  },
+  {
+    id: 5,
+    name: "Tailwind.css",
+    image: Tailwind,
+    width: 65,
+    height: 65,
+  },
+  {
+    id: 6,
+    name: "Redux",
+    image: Redux,
+    width: 70,
+    height: 70,
+  },
+  {
+    id: 7,
+    name: "MongoDB",
+    image: MongoDB,
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 8,
+    name: "Express.js",
+    image: Express,
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 9,
+    name: "React,.js",
+    image: React,
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 10,
+    name: "Node.js",
+    image: Node,
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 11,
+    name: "Next.js",
+    image: Nextjs,
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 12,
+    name: "TypeScript",
+    image: Typescript,
+    width: 70,
+    height: 70,
+  },
+  {
+    id: 13,
+    name: "Figma",
+    image: Figma,
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 14,
+    name: "GitHub",
+    image: GitHub,
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 15,
+    name: "Git",
+    image: Git,
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 16,
+    name: "Arduino",
+    image: Arduino,
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 17,
+    name: "Vercel",
+    image: Vercel,
+    width: 80,
+    height: 80,
+  },
+];
 
 export const skill6 = [
   {
@@ -855,7 +976,6 @@ export const skill5 = [
     width: 80,
     height: 80,
   },
-
   {
     id: 11,
     name: "Next.js",

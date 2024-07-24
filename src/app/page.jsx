@@ -13,8 +13,8 @@ const page = () => {
     <main className="flex flex-col gap-12 mt-[6rem] sm:w-[95%] w-[98%] mx-auto">
       <div className="w-full xl:h-[40rem] h-[38rem] xl:mt-[4rem] mt-0 relative mx-auto">
         <Home />
-        <StarsCanvas />
       </div>
+      <StarsCanvas />
       <About />
       <Education />
       <Skill />
