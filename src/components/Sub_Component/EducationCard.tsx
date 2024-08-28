@@ -34,7 +34,7 @@ const EducationCard: React.FC<EducationProps> = (props) => {
             <time className="mb-1 md:text-sm text-base font-normal leading-none text-gray-400 dark:text-gray-500">
               {date}
             </time>
-            <h3 className="lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
+            <h3 className="lg:text-lg text-base font-semibold text-white">
               {name}
             </h3>
             <h4 className="mb-4 lg:text-base text-sm font-normal text-gray-500 dark:text-gray-400">
