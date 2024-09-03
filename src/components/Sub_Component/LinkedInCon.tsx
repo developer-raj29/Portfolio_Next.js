@@ -14,7 +14,7 @@ const LinkedInCon = () => {
         className="md:w-[50%] sm:w-[61%] w-[100%]"
       >
         <Tilt>
-          <div className="bg-white xl:w-[90%] sm:w-full xs:w-[75%] w-[90%] h-[23.5rem] mx-auto rounded-[13%] flex flex-col gap-4">
+          <div className="bg-white xl:w-[88%] sm:w-full xs:w-[75%] w-[90%] h-[23.5rem] mx-auto rounded-[13%] flex flex-col gap-4">
             <Image src={baground} className="background" alt="img" />
             <div>
               <Image
