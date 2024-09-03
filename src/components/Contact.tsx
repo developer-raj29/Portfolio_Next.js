@@ -12,16 +12,16 @@ require("dotenv").config();
 
 // import { Link } from "react-router-dom";
 
-interface ContactType {
-  fullName: string;
-  email: string;
-  subject: string;
-  phone: string;
-  message: string;
-  form:any;
-}
+// interface ContactType {
+//   fullName: string;
+//   email: string;
+//   subject: string;
+//   phone: string;
+//   message: string;
+//   form:any;
+// }
 
-const Contact: React.FC<ContactType> = () => {
+const Contact: React.FC = () => {
   const form = useRef();
   const [formData, setformData] = useState({
     fullName: "",
@@ -30,7 +30,8 @@ const Contact: React.FC<ContactType> = () => {
     phone: "",
     message: "",
   });
- const PublicKey = "YOeeliDWO8RXStjkb";
+
+//  const PublicKey = "YOeeliDWO8RXStjkb";
  const TEMPLATE_ID = "template_j283led";
  const YOUR_SERVICE_ID = "service_okmc83m";
 
@@ -63,7 +64,7 @@ const Contact: React.FC<ContactType> = () => {
     ) {
       toast.error("All fields are required!");
     } else {
-      emailjs.sendForm(YOUR_SERVICE_ID, TEMPLATE_ID, form.current, {
+      emailjs.sendForm(YOUR_SERVICE_ID, TEMPLATE_ID, form, {
         publicKey: "YOeeliDWO8RXStjkb",
       });
       toast.success("Thankyou 😊 your infromation accepted!");
@@ -91,16 +92,18 @@ const Contact: React.FC<ContactType> = () => {
         <div className="contact-page">
           <div className="xl:w-[35%] lg:w-[50%] sm:w-[58%] w-full relative">
             <Tilt>
-              <Image src={hero} alt="" className="relative w-full" />
+              <Image src={hero} alt="" className="relative w-full" loading="lazy"/>
             </Tilt>
             <Image
               src={Web}
               alt=""
+              loading="lazy"
               className="absolute xl:w-[70px] lg:w-[65px] md:w-[80px] sm:w-[75px] w-[60px] xl:top-[4px] lg:top-[6px] top-[40px] xl:right-[10px] lg:right-[16px] right-0 topdown"
             />
             <Image
               src={language}
               alt=""
+              loading="lazy"
               className="absolute xl:w-[70px] lg:w-[65px] md:w-[80px] sm:w-[75px] w-[60px] sm:top-[20rem] top-[18rem] lg:left-[1rem] left-0 rightleft"
             />
           </div>

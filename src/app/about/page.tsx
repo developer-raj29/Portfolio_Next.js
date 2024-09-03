@@ -13,7 +13,6 @@ import LinkedInCon from "@/components/Sub_Component/LinkedInCon";
 import AboutIMG from "../../../public/Images/Profile pic.jpg";
 import Image from "next/image";
 import Contact from "@/components/Contact";
-// import Contact from "@/components/Contact";
 
 const About = () => {
   const DATA = data.About;
