@@ -18,11 +18,11 @@ require("dotenv").config();
 //   subject: string;
 //   phone: string;
 //   message: string;
-//   form:any;
+//   formRef: any;
 // }
 
-const Contact: React.FC = () => {
-  const form = useRef();
+const Contact: React.FC= () => {
+const formRef = useRef(null); 
   const [formData, setformData] = useState({
     fullName: "",
     email: "",
@@ -60,11 +60,12 @@ const Contact: React.FC = () => {
       !formData.email.trim() ||
       !formData.subject.trim() ||
       !formData.phone.trim() ||
-      !formData.message.trim()
+      !formData.message.trim() ||
+      !formRef.current
     ) {
       toast.error("All fields are required!");
     } else {
-      emailjs.sendForm(YOUR_SERVICE_ID, TEMPLATE_ID, form, {
+      emailjs.sendForm(YOUR_SERVICE_ID, TEMPLATE_ID, formRef.current, {
         publicKey: "YOeeliDWO8RXStjkb",
       });
       toast.success("Thankyou 😊 your infromation accepted!");
@@ -92,7 +93,12 @@ const Contact: React.FC = () => {
         <div className="contact-page">
           <div className="xl:w-[35%] lg:w-[50%] sm:w-[58%] w-full relative">
             <Tilt>
-              <Image src={hero} alt="" className="relative w-full" loading="lazy"/>
+              <Image
+                src={hero}
+                alt=""
+                className="relative w-full"
+                loading="lazy"
+              />
             </Tilt>
             <Image
               src={Web}
@@ -112,7 +118,10 @@ const Contact: React.FC = () => {
             <Tilt>
               <div className="text-black rounded-3xl p-[1px] animate-text hover:bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500">
                 <div className="flex rounded-3xl items-center justify-center flex-col pb-3 bg-black">
-                  <form ref={form} className="flex flex-col sm:items-start items-center">
+                  <form
+                    ref={formRef}
+                    className="flex flex-col sm:items-start items-center"
+                  >
                     <div className="flex flex-wrap justify-center gap-4 p-5 text-black">
                       <div className="flex lg:flex-nowrap flex-wrap sm:gap-2 gap-4 w-[100%]">
                         <input
