@@ -52,19 +52,21 @@ const Card: React.FC<CardProps> = (props) => {
             src={image}
             alt="Main Image"
             className=" rounded-t-[2rem] border"
+            loading="lazy"
           />
           <Link href={link}>
             <Image
               src={githubIcon}
               alt="GithubIcon"
               className="absolute w-[60px] top-0 right-0"
+              loading="lazy"
             />
           </Link>
         </div>
         <div className="flex gap-3">
           {skill.map((skill: Skill) => (
             <div className="w-[35px]" key={skill.id}>
-              <Image src={skill.image} alt={skill.name} />
+              <Image src={skill.image} alt={skill.name} loading="lazy" />
             </div>
           ))}
         </div>

@@ -93,6 +93,7 @@ const Skill = () => {
                     src={item.image}
                     width={item.width}
                     height={item.height}
+                    loading="lazy"
                     className="xl:rounded-[20px] md:rounded-[10px] rounded-[8px] "
                     alt="img"
                   />

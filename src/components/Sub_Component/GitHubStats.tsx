@@ -21,6 +21,7 @@ const GitHubStats = () => {
                 src="https://github-readme-stats.vercel.app/api?username=Rajyadav2912&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false"
                 alt="img"
                 className="w-full"
+                loading="lazy"
               />
             </picture>
           </Tilt>
@@ -31,6 +32,7 @@ const GitHubStats = () => {
               <img
                 src="https://github-readme-streak-stats.herokuapp.com?user=Rajyadav2912&theme=tokyonight&border_radius=10&date_format=j%20M%5B%20Y%5D"
                 alt="img"
+                loading="lazy"
               />
             </picture>
           </Tilt>

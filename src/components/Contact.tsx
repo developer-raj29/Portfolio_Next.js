@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import hero from "../../public/Images/3d-Contact-image.png";
 import Web from "../../public/3D ICON/web-development.png";
 import language from "../../public/3D ICON/language.png";
@@ -7,38 +7,47 @@ import Tilt from "@/components/Sub_Component/Tilt";
 import Image from "next/image";
 import { BackgroundBeams } from "@/components/UI_Components/background-beams";
 import { ToastContainer, toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
+require("dotenv").config();
 
 // import { Link } from "react-router-dom";
 
-// interface ContactType {
-//   fullName: string;
-//   email: string;
-//   subject: string;
-//   phone: string;
-//   message: string;
-// }
+interface ContactType {
+  fullName: string;
+  email: string;
+  subject: string;
+  phone: string;
+  message: string;
+  form:any;
+}
 
-const Contact: React.FC = () => {
-  const [fromData, setFromData] = useState({
+const Contact: React.FC<ContactType> = () => {
+  const form = useRef();
+  const [formData, setformData] = useState({
     fullName: "",
     email: "",
     subject: "",
     phone: "",
     message: "",
   });
+ const PublicKey = "YOeeliDWO8RXStjkb";
+ const TEMPLATE_ID = "template_j283led";
+ const YOUR_SERVICE_ID = "service_okmc83m";
 
   const changeHanlder = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLFormElement
+    >
   ) => {
     const { name, value } = e.target;
 
-    setFromData((prev) => {
+    setformData((prev) => {
       return {
         ...prev,
         [name]: value,
       };
     });
-    // console.log("changeHanlder", fromData);
+    // console.log("changeHanlder", formData);
   };
 
   function submitHandler(e: React.MouseEvent) {
@@ -46,17 +55,27 @@ const Contact: React.FC = () => {
     console.log("click submit");
 
     if (
-      !fromData.fullName.trim() ||
-      !fromData.email.trim() ||
-      !fromData.subject.trim() ||
-      !fromData.phone.trim() ||
-      !fromData.message.trim()
+      !formData.fullName.trim() ||
+      !formData.email.trim() ||
+      !formData.subject.trim() ||
+      !formData.phone.trim() ||
+      !formData.message.trim()
     ) {
       toast.error("All fields are required!");
     } else {
+      emailjs.sendForm(YOUR_SERVICE_ID, TEMPLATE_ID, form.current, {
+        publicKey: "YOeeliDWO8RXStjkb",
+      });
       toast.success("Thankyou 😊 your infromation accepted!");
+      setformData({
+        fullName: "",
+        email: "",
+        subject: "",
+        phone: "",
+        message: "",
+      });
     }
-    console.log(fromData);
+    // console.log(formData);
   }
 
   return (
@@ -90,7 +109,7 @@ const Contact: React.FC = () => {
             <Tilt>
               <div className="text-black rounded-3xl p-[1px] animate-text hover:bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500">
                 <div className="flex rounded-3xl items-center justify-center flex-col pb-3 bg-black">
-                  <form className="flex flex-col sm:items-start items-center">
+                  <form ref={form} className="flex flex-col sm:items-start items-center">
                     <div className="flex flex-wrap justify-center gap-4 p-5 text-black">
                       <div className="flex lg:flex-nowrap flex-wrap sm:gap-2 gap-4 w-[100%]">
                         <input
@@ -99,7 +118,7 @@ const Contact: React.FC = () => {
                           placeholder="Enter full name..."
                           name="fullName"
                           onChange={changeHanlder}
-                          value={fromData.fullName}
+                          value={formData.fullName}
                         />
 
                         <input
@@ -108,7 +127,7 @@ const Contact: React.FC = () => {
                           placeholder="Enter email address..."
                           name="email"
                           onChange={changeHanlder}
-                          value={fromData.email}
+                          value={formData.email}
                         />
                       </div>
 
@@ -119,7 +138,7 @@ const Contact: React.FC = () => {
                           placeholder="Enter mob. No.."
                           name="phone"
                           onChange={changeHanlder}
-                          value={fromData.phone}
+                          value={formData.phone}
                         />
 
                         <input
@@ -128,7 +147,7 @@ const Contact: React.FC = () => {
                           placeholder="Enter email Subject..."
                           name="subject"
                           onChange={changeHanlder}
-                          value={fromData.subject}
+                          value={formData.subject}
                         />
                       </div>
 
@@ -139,7 +158,7 @@ const Contact: React.FC = () => {
                         className="w-full md:h-[200px] sm:h-[180px] h-[170px] rounded-lg p-3 outline-none"
                         name="message"
                         onChange={changeHanlder}
-                        value={fromData.message}
+                        value={formData.message}
                       ></textarea>
                     </div>
 

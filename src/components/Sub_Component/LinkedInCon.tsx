@@ -20,6 +20,7 @@ const LinkedInCon = () => {
               <Image
                 src={photo}
                 alt=""
+                loading="lazy"
                 className="w-[6rem] h-[6rem] -mt-[3.5rem] mx-auto border-[2px] rounded-[10rem]"
               />
             </div>
@@ -54,7 +55,12 @@ const LinkedInCon = () => {
 
       <div className="lg:w-[50%] md:w-[70%] sm:w-[90%] w-[100%]">
         <Tilt>
-          <Image src={Model} alt="" className="w-[80%] mx-auto" />
+          <Image
+            src={Model}
+            alt=""
+            className="w-[80%] mx-auto"
+            loading="lazy"
+          />
         </Tilt>
       </div>
     </div>

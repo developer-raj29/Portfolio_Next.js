@@ -28,7 +28,7 @@ const EducationCard: React.FC<EducationProps> = (props) => {
 
         <div className="leading-4 mt-4 flex flex-1 md:flex-row flex-col gap-2 py-1 sm:pl-3 pl-1 w-full h-full card-shadow rounded-2xl hover:-translate-y-3 transition-all duration-500">
           <div className="lg:w-[50%] md:w-[68%] sm:w-[98%] w-[100%] sm:p-2 p-1">
-            <Image src={image} alt="" className="w-full h-full" />
+            <Image src={image} alt="" loading="lazy" className="w-full h-full" />
           </div>
           <div className="w-full h-full mt-2 xl:px-2 px-1 py-2 flex flex-col md:gap-0 gap-1">
             <time className="mb-1 md:text-sm text-base font-normal leading-none text-gray-400 dark:text-gray-500">

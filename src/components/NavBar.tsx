@@ -51,16 +51,18 @@ const NavBar: React.FC = () => {
       className="fixed flex items-center lg:justify-around justify-between mx-auto xl:w-[95%] lg:w-[94%] md:w-[90%] sm:w-[95%] w-[90%] lg:h-[12%] md:h-[13%] sm:h-[12%] xs:h-[14%] h-[12%] mt-2 xl:px-0 lg:px-1 md:px-12 sm:px-12 px-6 xl:gap-16 sm:gap-[10rem] gap-0 z-[9999999] backdrop-blur-md xl:rounded-s-[3rem] xl:rounded-e-[3rem] rounded-s-[4rem] rounded-e-[4rem]
      nav-animation transition-all duration-700"
     >
-      <div className="xl:w-[21%] lg:w-[26%] md:w-[40%] sm:w-[45%] w-[90%] xl:-ml-14 lg:ml-6 md:ml-3 sm:ml-2">
+      <div className="xl:w-[18%] lg:w-[25%] md:w-[40%] sm:w-[45%] w-[90%] xl:-ml-14 lg:ml-6 md:ml-3 sm:ml-2">
         <Link href={"/"} className="relative flex items-center gap-2">
           <Image
             src={circle}
             alt=""
+            loading="lazy"
             className="xl:w-[30%] sm:w-[28%] w-[20%]"
           />
           <Image
             src={logo}
             alt="logo"
+            loading="lazy"
             className="absolute xl:w-[31%] lg:w-[28%] md:w-[29%] sm:w-[28.5%] xs:w-[21%] w-[20%] rounded-bl-[3rem] rounded-br-[3.2rem] top-[2px] "
           />
           <h2 className="nav-text lg:text-[1.8rem] md:text-[2rem] sm:text-[2rem] xs:text-[1.8rem] text-[1.5rem] animate-text bg-gradient-to-br from-blue-600 via-purple-600 to-yellow-400 bg-clip-text text-transparent">
