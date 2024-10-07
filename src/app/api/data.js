@@ -97,7 +97,7 @@ const data = {
       ],
       category: "Frontend",
     },
-
+    // 2. title: "Musicall Website"
     {
       id: 2,
       title: "Musicall Website",
@@ -131,8 +131,7 @@ const data = {
       ],
       category: "Frontend",
     },
-
-    // 2.  title: "Tech-Soft Blog website",
+    // 3.  title: "Tech-Soft Blog website",
     {
       id: 3,
       title: "Tech-Soft Blog website",
@@ -171,7 +170,7 @@ const data = {
       ],
       category: "Frontend",
     },
-    // 3. title: "My Portfolio",
+    // 4. title: "Full Stack E-commerce website",
     {
       id: 4,
       title: "Full Stack E-commerce website",
@@ -180,7 +179,7 @@ const data = {
         "Developed a full-stack E-commerce website with an Admin panel using MERN and Tailwind.css. Gained expertise in database management, server-side scripting, dynamic UI development, and responsive design. Utilized JSON Web Token (JWT) for secure authentication & optimizing database queries, and user-friendly experiences. Enhanced coding expertise through hands-on project experience, gaining valuable problem-solving skills and adaptability.",
       image: newE_comm,
       link: "https://github.com/Rajyadav2912/E-commerce-Shopping-website-MERN",
-      weblink: "",
+      weblink: "https://e-commerce-website-frontend29.vercel.app/",
       skills: [
         {
           id: 1,
@@ -210,7 +209,7 @@ const data = {
       ],
       category: "Full Stack",
     },
-    // 4. title: "Contact APP with CRUD",
+    // 5. title: "Contact APP with CRUD",
     {
       id: 5,
       title: "Contact APP with CRUD",
@@ -367,7 +366,7 @@ const data = {
         "Developed a full-stack E-commerce website with an Admin panel using MERN and Tailwind.css. Gained expertise in database management, server-side scripting, dynamic UI development, and responsive design. Utilized JSON Web Token (JWT) for secure authentication & optimizing database queries, and user-friendly experiences. Enhanced coding expertise through hands-on project experience, gaining valuable problem-solving skills and adaptability.",
       image: newE_comm,
       link: "https://github.com/Rajyadav2912/E-commerce-Shopping-website-MERN",
-      weblink: "",
+      weblink: "https://e-commerce-website-frontend29.vercel.app/",
       skills: [
         {
           id: 1,
