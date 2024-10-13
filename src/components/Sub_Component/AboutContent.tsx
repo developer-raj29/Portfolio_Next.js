@@ -5,6 +5,7 @@ import Location from "../../../public/3D ICON/location.png";
 import Arrow from "../../../public/Images/arrow.svg";
 import Image from "next/image";
 import ALL_Button from "./All_Button";
+import TextAnimation from "./TextAnimation";
 
 interface ContentProps {
   title: string;
@@ -37,8 +38,8 @@ const Content: React.FC<ContentProps> = (props) => {
       <h2 className="flex xl:text-[1.66rem] xs:text-[1.6rem] text-[.85rem] mx-0 font-semibold leading-normal">
         {heading}
         <span className="auto-typing-1 text-[#f8ce96] ml-1">
-          {/* <TextAnimation /> */}
-          Full Stack Developer
+          <TextAnimation />
+          {/* Full Stack Developer */}
         </span>
       </h2>
 

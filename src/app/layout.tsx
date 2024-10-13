@@ -5,7 +5,8 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import "react-toastify/dist/ReactToastify.css";
-import ClientWrapper from "./ClientWrapper"; // Import the client component
+import ClientWrapper from "./ClientWrapper";
+// Import the client component
 
 const inter = Inter({ subsets: ["latin"] });
 

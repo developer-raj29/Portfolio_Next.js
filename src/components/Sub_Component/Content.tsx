@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
 // import resume from "../../";
@@ -6,6 +7,7 @@ import Handler from "../../app/api/index";
 import ALLButton from "./All_Button";
 import Link from "next/link";
 import Image from "next/image";
+import TextAnimation from "./TextAnimation";
 
 const Content = () => {
   const Social = Handler.Social_Media;
@@ -25,7 +27,8 @@ const Content = () => {
         And I&#39;m
         <span className="auto-typing-1 text-[#f8ce96]">
           {/* <TextAnimation /> */}
-          Full Stack Developer
+          {/* Full Stack Developer */}
+          <TextAnimation />
         </span>
       </h2>
       <p className="xl:text-[1.02rem] lg:text-[0.9rem] sm:text-[0.81rem] text-[0.8rem] mt-2 font-semibold leading-normal">

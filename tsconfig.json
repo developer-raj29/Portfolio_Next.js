@@ -29,7 +29,9 @@
     "src/app/NavBar.jsx",
     "src/app/layout.tsx",
     "src/app/page.jsx",
-    "src/components/Sub_Component/Edu_Card.jsx"
+    "src/components/Sub_Component/Edu_Card.jsx",
+    "src/app/ClientWrapper.tsx",
+    "src/app/ClientWrapper.tsx"
   ],
   "exclude": ["node_modules"]
 }

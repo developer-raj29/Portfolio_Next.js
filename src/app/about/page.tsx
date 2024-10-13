@@ -13,6 +13,7 @@ import LinkedInCon from "@/components/Sub_Component/LinkedInCon";
 import AboutIMG from "../../../public/Images/Profile pic.jpg";
 import Image from "next/image";
 import Contact from "@/components/Contact";
+import TextAnimation from "@/components/Sub_Component/TextAnimation";
 
 const About = () => {
   const DATA = data.About;
@@ -41,8 +42,8 @@ const About = () => {
                     <h2 className="md:text-[1.7rem] flex sm:text-[1.5rem] text-[13.5px] sm:mx-auto mx- font-semibold leading-normal">
                       {item.heading}
                       <span className="auto-typing-1 md:ml-2 ml-1 text-[#f8ce96]">
-                        {/* <TextAnimation /> */}
-                        Full Stack Developer
+                        <TextAnimation />
+                        {/* Full Stack Developer */}
                       </span>
                     </h2>
 

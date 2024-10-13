@@ -2,7 +2,11 @@
 import React, { useEffect, useState } from 'react'
 import Loading from "../components/Sub_Component/Loading"
 
-const ClientWrapper = ({ children }) => {
+interface ClientProps {
+children:any,
+}
+
+const ClientWrapper: React.FC<ClientProps> = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
