@@ -1,5 +1,5 @@
-import { NextResponse } from "next/server";
-import SocialModel from "../../lib/models/SocialModel";
+import { NextResponse, NextRequest } from "next/server";
+import SocialModel from "../../../lib/models/SocialModel";
 
 import connectDB from "@/lib/config/db";
 const cloudinary = require("next-cloudinary").v2;
@@ -11,51 +11,51 @@ connectDB();
 
 // loadDB();
 
-function isFileTypeSupported(type, supportedTypes) {
-  return supportedTypes.includes(type);
+// function isFileTypeSupported(type, supportedTypes) {
+//   return supportedTypes.includes(type);
+// }
+
+// async function uploadFileToCloudinary(file, folder, quality) {
+//   const options = { folder };
+
+//   if (quality) {
+//     options.quality = quality;
+//   }
+
+//   options.resource_type = "auto";
+
+//   return await cloudinary.uploader
+//     .upload(file, options)
+//     .then((result) => {
+//       console.log("Upload successful", result);
+//       return result;
+//     })
+//     .catch((error) => {
+//       console.error("Cloudinary upload error: ", error);
+//       throw new Error(error);
+//     });
+// }
+
+export async function GET(req, res) {
+  try {
+  const socialMedia = await SocialModel.find({});
+
+  return NextResponse.json({
+    success: true,
+    data: socialMedia,
+    message: "Social Data GET Method Successfully",
+  });
+  } catch (error) {
+    return NextResponse.json({
+      success: false,
+      message: "Social Data GET Method Failed",
+    });
+  }
 }
 
-async function uploadFileToCloudinary(file, folder, quality) {
-  const options = { folder };
-
-  if (quality) {
-    options.quality = quality;
-  }
-
-  options.resource_type = "auto";
-
-  return await cloudinary.uploader
-    .upload(file, options)
-    .then((result) => {
-      console.log("Upload successful", result);
-      return result;
-    })
-    .catch((error) => {
-      console.error("Cloudinary upload error: ", error);
-      throw new Error(error);
-    });
-};
-
-export async function GET ($req, $res){
+export async function POST(req, res, { params }) {
   // try {
-    // const socialMedia = await SocialModel.find({});
-
-    return NextResponse.json({
-      success: true,
-      // data: socialMedia,
-      message: "Social Data GET Method Successfully",
-    });
-  // } catch (error) {
-  //   return NextResponse.json({
-  //     success: false,
-  //     message: "Social Data GET Method Failed",
-  //   });
-  // }
-};
-
-export async function POST($req, $res, { params }) {
-  try {
-    const { name, path, imageURL } = params;
+    const { name, path } = params;
 
     const socialMedia = await SocialModel.find({});
 
@@ -69,7 +69,7 @@ export async function POST($req, $res, { params }) {
       id = 1;
     }
 
-    if (!name || !path || !imageURL) {
+    if (!name || !path) {
       return NextResponse.json({
         success: false,
         message: "All fields are required",
@@ -77,7 +77,7 @@ export async function POST($req, $res, { params }) {
     }
 
     // image Url on cloud is pending.
-    let file = $req.files.imageURL;
+    let file = req.files.imageURL;
 
     console.log("File : ", file);
 
@@ -105,8 +105,8 @@ export async function POST($req, $res, { params }) {
 
     const social = await SocialModel.create({
       id: id,
-      name: $req.body.name,
-      path: $req.body.path,
+      name,
+      path,
       imageURL: response.secure_url,
     });
 
@@ -118,13 +118,13 @@ export async function POST($req, $res, { params }) {
       success: true,
       message: "Social Data POST Method Successfully",
     });
-  } catch (error) {
-    return NextResponse.json({
-      success: false,
-      message: "Social Data POST Method Failed",
-    });
-  }
-};
+  // } catch (error) {
+  //   return NextResponse.json({
+  //     success: false,
+  //     message: "Social Data POST Method Failed",
+  //   });
+  // }
+}
 
 export const PUT = async ($req, $res) => {
   try {

@@ -9,11 +9,11 @@ children:any,
 const ClientWrapper: React.FC<ClientProps> = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 4000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
 
   return loading ? <Loading /> : <>{children}</>;
 };

@@ -24,13 +24,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className="w-screen h-screen overflow-x-hidden mx-auto">
-          {/* <ClientWrapper> */}
+          <ClientWrapper>
             <div className="relative flex justify-center w-[95%] mx-auto">
               <NavBar />
             </div>
             {children}
             <Footer />
-          {/* </ClientWrapper> */}
+          </ClientWrapper>
         </main>
       </body>
     </html>

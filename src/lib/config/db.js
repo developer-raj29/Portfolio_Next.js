@@ -12,7 +12,6 @@ const connectDB = async () => {
   .catch((error) => {
       console.error(error);
       console.log("Failed to Connected DataBase...");
-      process.exit(1);
     });
   });
 };
