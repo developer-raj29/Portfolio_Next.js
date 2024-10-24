@@ -32,6 +32,6 @@
     "src/components/Sub_Component/Edu_Card.jsx",
     "src/app/ClientWrapper.tsx",
     "src/app/ClientWrapper.tsx"
-  ],
+, "src/app/api/route.js"  ],
   "exclude": ["node_modules"]
 }
