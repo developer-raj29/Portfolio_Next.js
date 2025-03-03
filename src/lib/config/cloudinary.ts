@@ -16,4 +16,4 @@ const cloudinaryConnect = () => {
   }
 };
 
-module.exports = cloudinaryConnect;
+export default cloudinaryConnect;

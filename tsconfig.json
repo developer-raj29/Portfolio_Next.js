@@ -34,6 +34,6 @@
     "src/app/ClientWrapper.tsx",
     "src/app/api/socialmedia/route.js",
     "src/app/api/socialmedia/route.js"
-  ],
+, "src/lib/config/db.js"  ],
   "exclude": ["node_modules"]
 }

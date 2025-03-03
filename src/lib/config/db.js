@@ -4,12 +4,12 @@ import mongoose from "mongoose";
 require("dotenv").config();
 
 const connectDB = async () => {
-// import DB URL
-  mongoose
-  .connect(process.env.MONGODB_URL)
+  // import DB URL
+  await mongoose.connect(process.env.MONGODB_URL)
   .then(() => {
-    console.log("MongoDB Connected Successfully...")
-  .catch((error) => {
+    console.log(`MongoDB Connected Successfully...${mongoose.connection.host}`)
+    .catch((error) => {
+      mongoose.disconnect();
       console.error(error);
       console.log("Failed to Connected DataBase...");
     });
