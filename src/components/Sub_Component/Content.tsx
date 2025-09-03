@@ -53,7 +53,7 @@ const Content = () => {
       <ALLButton
         text={"Download"}
         page={"_blank"}
-        linkto={"/Raj Yadav_Resume.pdf"}
+        linkto={"/Raj Yadav_Resume.OIST.pdf"}
         icon={<FaDownload />}
       />
     </div>
